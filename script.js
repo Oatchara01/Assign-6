@@ -9,11 +9,13 @@ function addData() {
 }
 
 function displayData() {
+
     let dataList = document.getElementById("dataList");
     dataList.innerHTML = ""; // เคลียร์รายการเดิมก่อนแสดงใหม่
     dataArray.forEach((item, index) => {
         let listItem = document.createElement("li");
         listItem.textContent = `${index + 1}. ${item}`;
         dataList.appendChild(listItem);
+        
     });
 }
